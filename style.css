@@ -1,0 +1,133 @@
+/* Base styling for full-page mobile view */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Container styling */
+.astro-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #1a1a2e;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Titles */
+.astro-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+/* Frame input fields */
+.frame-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.frame-input label {
+    font-size: 1rem;
+    color: #c9c9d3;
+    margin-bottom: 0.5rem;
+}
+
+.frame-input input[type="number"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Counter Section Styling */
+.frame-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* General button styles */
+.counter-button {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Full width for mobile-friendly design */
+}
+
+#current-count {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(214, 214, 214);
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.counter-button:hover {
+    background-color: #005f99;
+}
+
+/* Large button styles */
+.big-button {
+    padding: 2rem;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+/* Submit button */
+.submit-button {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #007acc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #005f99;
+}

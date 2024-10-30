@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="setup-section" class="astro-container">
+        <h1>Astrophotography Frame Setup</h1>
+        <div class="frame-input">
+            <label for="light-total">Light Frames:</label>
+            <input type="number" id="light-total" value="400">
+        </div>
+        <div class="frame-input">
+            <label for="dark-total">Dark Frames:</label>
+            <input type="number" id="dark-total" value="20">
+        </div>
+        <div class="frame-input">
+            <label for="bias-total">Bias Frames:</label>
+            <input type="number" id="bias-total" value="20">
+        </div>
+        <button class="submit-button" onclick="startCounter()">Start Counter</button>
+    </div>
+    
+    <div id="counter-section" class="astro-container" style="display: none;">
+        <h1 id="counter-title">Light Frames Counter</h1>
+        <div class="frame-counter">
+            <label id="frame-label">Frames Taken:</label>
+            <input type="number" id="current-count" value="0" readonly>
+        </div>
+        <div class="button-container">
+            <button class="counter-button" onclick="decrementCounter()">-</button>
+            <button class="counter-button big-button" onclick="incrementCounter()">+</button>
+        </div>
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
